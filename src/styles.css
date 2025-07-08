@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: black;
+  color: white;
+}
+/* Optional: For the custom animation class, if you want a subtle floating effect */
+.PlatformStack_animate__je4gX {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Optional: You can use the --sprites variable for background images if needed */
+[class*="transition-all"][style*="--sprites"] {
+  /* Example: Uncomment if you want to use the --sprites variable as a background */
+  /* background-image: var(--sprites); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+@keyframes countdown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes progressDown {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
